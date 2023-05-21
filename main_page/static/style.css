@@ -1,0 +1,113 @@
+body{    
+    background-color: #121212;
+    color : rgb(255,255,255);
+    margin:0;
+    height: 100%;
+}
+
+.search{
+    width: 100%;
+    height:40px;
+    margin-top:10px;
+    text-align: center;
+}
+.search input[type=text]{
+    width:15%;
+    margin-right: 5px;
+    height: 30px;
+    border-radius:10px;
+    padding-left: 10px;
+    
+}
+.search input[type=Submit]{
+    width:33px;
+    height: 33px;
+    border-radius:10px;
+}
+.search input[type=Submit]:hover{
+    background-color:#1ED760;
+}
+.albums{
+    width:40%;
+    float: left;
+    display: block;
+    margin-left: 10%;
+}
+.album{
+    margin:30px;
+    width:100%;
+    height: 150px;
+
+    float: left;
+    display: block;
+}
+.albums_info{
+    float: left;
+    display: block;
+    height: 150px;
+    width: 50%;
+}
+.albums_info ul li{
+    text-align: left;
+    list-style-type: none;
+}
+.album_name{
+    font-size:25px;;
+}
+.image{
+    max-width:150px; 
+    height:150px;
+    float: left;
+    display: block;
+}
+.image img{
+    max-width:100%; 
+    height:auto;
+    border-radius: 15px;
+}
+.artist{
+    width:30%;
+    height: auto;
+    float: left;
+    display: block;
+    margin-top: 30px;
+    
+    margin-left: 10%;
+}
+.artist_info{
+    margin-right: 10%;
+    position: fixed;
+    top: 80px;
+}
+.artist_info img{
+    max-width:100%; 
+    height:auto;  
+    border-radius: 50px;  
+}
+.artist_info p{
+    text-align: center;
+    padding:0;
+    margin:0;
+}
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: #1ED760;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: #1ED760;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+

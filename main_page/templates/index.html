@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Albums search</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    </head>
+    <body> 
+        <div class="search">
+            <form action="" method="POST">
+                {% csrf_token %}
+                <input type="text" name="artist" maxlength="100" required id="id_artist">
+                <input type="Submit" name="submit" value="🔍︎"/>
+            </form>
+            </div>
+        <div class="albums">
+        {%for item in albums%}
+            <div class="album">
+                <div class="image"><img src="{{item.cover}}"></div>            
+                <div class="albums_info">
+                    <ul>
+                        <li class="album_name">{{item.name}}</li>
+                        <br>
+                        <li>Released {{item.release}}</li>
+                        <li>Number of tracks {{item.numTracks}}</li>
+                    </ul>
+                </div> 
+            </div>
+            {%endfor%}        
+        </div>
+        <div class="artist">
+            <div class="artist_info">
+                <img src="{{artist.image}}">
+                <h1><p>{{artist.name}}</p></h1>
+                {%for item in artist.genres%}
+                    <p>{{item}}</p>
+                {%endfor%}
+                <br>
+                {%if artist%}
+                    <p>View on <a href="{{artist.url}}">Spotify</a></p>   
+                {%endif%}             
+            </div>          
+        </div>        
+    </body>
+</html>
