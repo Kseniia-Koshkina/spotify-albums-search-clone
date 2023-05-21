@@ -6,8 +6,8 @@ import requests
 import urllib.parse
 
 def search(artist="Hozier"):
-    client_id="0f384b93d54841a4bbb63fc3c414320e"
-    client_secret="6738a64f4837459fa582348bc557d592"
+    client_id="YOUR KEY"
+    client_secret="YOUR KEY"
 
     encoded_credentials = base64.b64encode(client_id.encode() + b':' + client_secret.encode()).decode("utf-8")
     token_headers = {
